@@ -13,14 +13,6 @@ Form component library using the ITCSS architecture and Sass/SCSS and Gulp.js fo
 - Gulp resources
   - [Automate and enhance your workflow](https://gulpjs.com/)
 
-## ITCSS Diagrams
-
-### ITCSS Layers
-![ITCSS Layers Pyramid](../assets/itcss-pyramid.jpg?raw=true)
-
-### ITCSS Specificity
-![ITCSS Specificity Pyramid](../assets/itcss-specificity.png?raw=true)
-
 ## Project requirements
 
 - Node^8.0.0
@@ -49,4 +41,10 @@ Form component library using the ITCSS architecture and Sass/SCSS and Gulp.js fo
 - Elements
 - Objects
 - Components
-- Trumps
+- Overrides (also known as Trumps)
+
+### ITCSS Layers Diagram
+![ITCSS Layers Pyramid](../assets/itcss-pyramid.jpg?raw=true)
+
+### ITCSS Specificity Diagram
+![ITCSS Specificity Pyramid](../assets/itcss-specificity.png?raw=true)
