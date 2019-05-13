@@ -1,6 +1,18 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# form-component-lib with ITCSS
 
-# form-component-lib
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)]
+[![forthebadge](https://forthebadge.com/images/badges/built-with-science.svg)](https://forthebadge.com)
+[![ForTheBadge uses-badges](http://ForTheBadge.com/images/badges/uses-badges.svg)]
+[![ForTheBadge uses-git](http://ForTheBadge.com/images/badges/uses-git.svg)]
+[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
+[![ForTheBadge uses-html](http://ForTheBadge.com/images/badges/uses-html.svg)]
+[![forthebadge](https://forthebadge.com/images/badges/validated-html5.svg)](https://forthebadge.com)
+[![ForTheBadge powered-by-electricity](http://ForTheBadge.com/images/badges/powered-by-electricity.svg)]
+
+[![forthebadge](https://forthebadge.com/images/badges/winter-is-coming.svg)](https://forthebadge.com)
+
+[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)]
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Form component library using the ITCSS architecture and Sass/SCSS and Gulp.js for local development workflow with Yarn as the node package manager. Local development workflow requres: Node.js, Yarn, and Gulp.js.
 
