@@ -11,17 +11,19 @@ Need to:
 // -----------------------------------------------------------------------------
 
 var gulp = require('gulp'),
-    (plumber = require('gulp-plumber')),
-    (notify = require('gulp-notify')),
-    (sassLint = require('gulp-sass-lint')),
-    (del = require('del')),
-    (vinylPaths = require('vinyl-paths')),
-    (sourcemaps = require('gulp-sourcemaps')),
-    (colors = require('colors')),
-    // Temporary solution until gulp 4
-    // https://github.com/gulpjs/gulp/issues/355
-    (runSequence = require('run-sequence')),
-    (strip = require('gulp-strip-comments'));
+  size = require('gulp-size'),
+  plumber = require('gulp-plumber'),
+  notify = require('gulp-notify'),
+  sassLint = require('gulp-sass-lint'),
+  del = require('del'),
+  vinylPaths = require('vinyl-paths'),
+  sourcemaps = require('gulp-sourcemaps'),
+  colors = require('colors'),
+  // Temporary solution until gulp 4
+  // https://github.com/gulpjs/gulp/issues/355
+  runSequence = require('run-sequence'),
+  strip = require('gulp-strip-comments');
+var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var cleanCSS = require('gulp-clean-css');
 var postcss = require('gulp-postcss');
@@ -160,6 +162,21 @@ gulp.task('minify-html', function() {
 });
 
 // -----------------------------------------------------------------------------
+// Deploy HTML files to dist folder
+// -----------------------------------------------------------------------------
+
+gulp.task('html-deploy', function() {
+  // Gets .html in pages
+  return (
+    gulp
+      .src(bases.app + 'pages/**/*.html')
+      // output files to dist folder
+      .pipe(gulp.dest(bases.dist))
+      .pipe(reload({ stream: true }))
+  );
+});
+
+// -----------------------------------------------------------------------------
 // Local server
 // -----------------------------------------------------------------------------
 
@@ -180,7 +197,7 @@ gulp.task('watch', function() {
     .watch(bases.app + 'scss/**/*.scss', ['styles'])
     .on('change', browserSync.reload);
   gulp
-    .watch(bases.app + './*.html', ['minify-html'])
+    .watch(bases.app + 'pages/*.html', ['minify-html', 'html-deploy'])
     .on('change', browserSync.reload);
 });
 
@@ -189,6 +206,7 @@ gulp.task('default', function(done) {
     'clean:dist',
     'styles',
     'minify-html',
+    'html-deploy',
     'browser-sync',
     'watch',
     done
