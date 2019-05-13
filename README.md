@@ -14,7 +14,11 @@ Form component library using the ITCSS architecture and Sass/SCSS and Gulp.js fo
   - [Automate and enhance your workflow](https://gulpjs.com/)
 
 ## ITCSS Diagrams
+
+### ITCSS Layers
 ![ITCSS Layers Pyramid](../assets/itcss-pyramid.jpg?raw=true)
+
+### ITCSS Specificity
 ![ITCSS Specificity Pyramid](../assets/itcss-specificity.png?raw=true)
 
 ## Project requirements
