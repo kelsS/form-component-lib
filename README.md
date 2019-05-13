@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # form-component-lib
 
 Form component library using the ITCSS architecture and Sass/SCSS and Gulp.js for local development workflow with Yarn as the node package manager. Local development workflow requres: Node.js, Yarn, and Gulp.js.
@@ -17,11 +19,12 @@ Form component library using the ITCSS architecture and Sass/SCSS and Gulp.js fo
 
 - Node^8.0.0
 - Yarn^1.12.3
-- Gulp^2.0.1
+- Gulp^3.9.1
 - Sass/SCSS
 
 ## Components in the library
 
+- Form
 - Short and long textfield
 - Textarea
 - Checkbox, radio button
@@ -30,8 +33,10 @@ Form component library using the ITCSS architecture and Sass/SCSS and Gulp.js fo
 
 ## Scope of library
 
-- Create components, modules, layouts, pages
+- Create components, modules, layouts, pages for forms
 - ITCSS architecture
+- Sass/SCSS
+- Build tools: Node, Yarn, Gulp
 
 ## ITCSS Architecture Layers
 
