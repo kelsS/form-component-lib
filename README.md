@@ -32,3 +32,13 @@ Form component library using the ITCSS architecture and Sass/SCSS and Gulp.js fo
 
 - Create components, modules, layouts, pages
 - ITCSS architecture
+
+## ITCSS Architecture Layers
+
+- Settings
+- Tools
+- Generic
+- Elements
+- Objects
+- Components
+- Trumps
