@@ -1,0 +1,19 @@
+// Overrides layer
+// this layer contains styles that override all the other layers
+// this is the highest specificity layer
+// this layer is to be avoided as much as possible and only here for emergency cases
+// when overrides are reusable move them to the more approriate layers such as in the /
+// component layer
+// true overrides that go in this layer are ones that are NOT reusable
+
+// Add buy-now-button class to distingush buy now button from the other form submit button
+.buy-now-button {
+  background: $light-tan;
+  color: $dark-purple;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+// Note:
+// this is just an example of an override, the better way to extend the form button
+// classes is shown in components layer

@@ -26,5 +26,8 @@
     "minimatch": "^3.0.4",
     "run-sequence": "^2.2.1",
     "vinyl-paths": "^2.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }

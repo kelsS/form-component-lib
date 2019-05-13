@@ -1,0 +1,10 @@
+// Generic layer
+// this layer contains basic generic styles such as importing normalize or other reset css // files
+
+// ==========================================================================
+// Normalize.css
+// to import a css file into an scss file you include the import directive
+// but do not add the .css extention or any extention
+// this imports the raw css file into the scss file
+// ==========================================================================
+@import 'vendor/normalize/normalize';

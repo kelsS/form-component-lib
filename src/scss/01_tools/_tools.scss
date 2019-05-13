@@ -1,0 +1,25 @@
+// Tools layer
+// this layer contains mixins and other scss tools that will be included in other scss
+// files
+
+// border settings
+@mixin border-settings($lineThickness, $radius) {
+  border-radius: $radius;
+  border: $lineThickness solid $dark-tan;
+}
+
+// gradient
+// gradient generated from uigradients @link https://uigradients.com/#WitchingHour
+@mixin witching-hour-gradient() {
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
